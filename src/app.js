@@ -2,6 +2,7 @@ const path=require('path');
 const hbs=require('hbs');
 const express=require('express');
 const app=express();
+const port =process.env.PORT || 3000;
 //loading utils file
 const geocoding=require('./utils/geocode.js');
 const forecast=require('./utils/forecast.js');
@@ -87,6 +88,6 @@ app.get('*',(req,res)=>{
     })
 })
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('Server has Started');
 })

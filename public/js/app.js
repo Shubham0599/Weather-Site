@@ -11,7 +11,7 @@ form.addEventListener('click',(e)=>{
     const location=search.value;
     console.log(location);
     msg1.textContent='Loading ......'
-    fetch('http://localhost:3000/weather?address='+location).then((res)=>{
+    fetch('/weather?address='+location).then((res)=>{
         msg1.textContent='';
     res.json().then((data)=>{
         if(data.error){
