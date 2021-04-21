@@ -53,3 +53,7 @@ p{
     font-family:Georgia, 'Times New Roman', Times, serif;
     color: #888888;
 }
+img{
+    max-width: 250px;
+    height: auto;
+}
